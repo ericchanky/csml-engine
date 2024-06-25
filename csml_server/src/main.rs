@@ -45,6 +45,7 @@ async fn main() -> std::io::Result<()> {
             .service(routes::status::get_status)
             .service(routes::run::handler)
             .service(routes::sns::handler)
+            .service(routes::bot_versions::make_bot_fold)
             .service(routes::bot_versions::add_bot_version)
             .service(routes::bot_versions::get_bot_version)
             .service(routes::bot_versions::get_bot_latest_version)
