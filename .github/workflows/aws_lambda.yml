@@ -2,7 +2,7 @@ name: AWS_Lambda
 
 on:
   release:
-    types: [published]
+    # types: [published]
 
 jobs:
   build:

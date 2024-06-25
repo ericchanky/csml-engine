@@ -2,7 +2,7 @@ name: macos-build
 
 on:
   release:
-    types: [published]
+    # types: [published]
 
 jobs:
   build:
