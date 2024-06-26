@@ -8,9 +8,6 @@ FROM --platform=$TARGETPLATFORM ubuntu:22.04
 ARG TARGETPLATFORM
 ARG TARGETARCH
 
-ENV amd64_path=target/release/csml_server
-ENV arm64_path=target/aarch64-unknown-linux-gnu/release/csml_server
-
 RUN apt update && apt install -y ca-certificates libpq-dev && apt clean
 RUN update-ca-certificates
 
